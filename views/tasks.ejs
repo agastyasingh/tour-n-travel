@@ -1,0 +1,51 @@
+<!-- Navbar -->
+<%- include("./partials/navbar"); %>
+  <!-- Navbar -->
+
+
+  <!-- contents -->
+  <section>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-9 ">
+          <div class="card rounded-3">
+            <div class="card-body p-4">
+  
+              <h3 class="text-center my-3 pb-3">Update Your Todo</h3>
+
+              <h6 class="text-left my-3" style="color: rgb(219, 202, 202);">Created On: <%= todo.updatedAt.toLocaleDateString("en-GB") %> </h6>
+              <h6 class="text-left my-3" style="color: rgb(219, 202, 202);">Time: <%= todo.updatedAt.toLocaleTimeString("en-GB") %> </h6>
+                
+              <h3 class="text-left my-3" style="color: rgb(255, 255, 255); text-decoration: underline;">Title</h3>
+              <h4 class="text-left my-3" style="color: rgb(219, 202, 202);"><%= todo.name %></h4>
+
+              <h3 class="text-left my-3" style="color: rgb(255, 255, 255); text-decoration: underline;">Description</h3>
+              <h4 class="text-left my-3" style="color: rgb(219, 202, 202);"><%= todo.description %></h4>
+              
+              <h3 class="text-center my-4 pb-3">&#8595; Update Below &#8595;</h3>
+              <form method="post" action="/dashboard/<%= user.name %>/update/<%= todo._id %>?_method=PUT" class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                  <div class="col-12">
+                    <div class="form-outline">
+                      <input style="color: black;" type="text" id="form1" value="<%= todo.name %>" name="todoName" class="form-control" placeholder="Enter task title to be updated" />
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <div class="form-outline">
+                      <textarea style="color: black;" name="todoDesc" id="form1" cols="30" rows="1" class="form-control" placeholder="Enter task description to be updated"><%= todo.description %></textarea>
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                      <button type="submit" class="btn btn-success">Update</button>
+                  </div>
+                  <div class="col-12">
+                    <a href="/dashboard" class="btn btn-md btn-primary center mx-1">Cancel</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

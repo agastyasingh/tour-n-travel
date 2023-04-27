@@ -1,0 +1,29 @@
+<header>
+<div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="/home">home</a>
+            <a href="/book">Book</a>
+            <a href="/packages">packages</a>
+            <a href="/services">services</a>
+            <a href="/gallery">gallery</a>
+            <a href="/review">review</a>
+            <a href="/contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <!-- <i class="fas fa-search" id="search-btn"></i> -->
+            <!-- <i class="fas fa-user" id="login-btn"></i> -->
+
+            <% if (display === undefined || display === null) { %>
+                <a style="color: rgb(230, 235, 249); font-size: 1.2em; font-weight: bolder; margin-top: 0em;" href="/users/login" class="btn btn-md">LOGIN</a>
+                <%} else { %>
+                <a class="btn logout" href="/users/logout" style="color: rgb(230, 235, 249); font-size: 1.6em; font-weight: bolder; margin-top: 0em;">
+                    <span class="replies">Hello, <%= display.name.split(' ')[0] %></span>
+                    <span class="comment">LOGOUT</span>
+                </a>
+            <% } %>
+        </div>
+</header>

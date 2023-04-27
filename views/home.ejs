@@ -1,0 +1,73 @@
+    <%- include("./partials/navbar"); %>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" name="email" class="box" placeholder="enter your email">
+            <input type="password" name="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="/users/register">register now</a></p>
+        </form>
+
+    </div> 
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>discover new places with us, adventure awaits</p>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <section class="brand-container">
+
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo-oppo.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo-coca-cola.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo-godrej.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <h1 class="credit"> created by <span> Madhur Goel </span> | all rights reserved! </h1>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
