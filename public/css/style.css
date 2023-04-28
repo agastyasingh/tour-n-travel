@@ -599,7 +599,6 @@ header .search-bar-container label:hover {
 
 .footer {
     background: #333;
-    z-index: 10; /* set z-index to a negative value */
 
 }
 
@@ -607,6 +606,8 @@ header .search-bar-container label:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+        z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container .box {
