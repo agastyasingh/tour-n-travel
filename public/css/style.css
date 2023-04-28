@@ -599,6 +599,8 @@ header .search-bar-container label:hover {
 
 .footer {
     background: #333;
+            z-index: 10; /* set z-index to a negative value */
+
 
 }
 
@@ -613,18 +615,24 @@ header .search-bar-container label:hover {
 .footer .box-container .box {
     padding: 1rem 0;
     flex: 1 1 25rem;
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container .box h3 {
     font-size: 2.5rem;
     padding: .7rem 0;
     color: #fff;
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container .box a {
@@ -632,11 +640,15 @@ header .search-bar-container label:hover {
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container .box a:hover {
     color: var(--orange);
     text-decoration: underline;
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .credit {
@@ -647,8 +659,12 @@ header .search-bar-container label:hover {
     font-weight: normal;
     color: #fff;
     border-top: .1rem solid rgba(255, 255, 255, .2);
+            z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .credit span {
     color: var(--orange);
+            z-index: 10; /* set z-index to a negative value */
+
 }
