@@ -599,6 +599,8 @@ header .search-bar-container label:hover {
 
 .footer {
     background: #333;
+    z-index: 10; /* set z-index to a negative value */
+
 }
 
 .footer .box-container {
