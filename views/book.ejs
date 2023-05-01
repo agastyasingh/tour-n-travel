@@ -72,7 +72,7 @@
         <img src="images/book-img.svg" alt="" />
       </div>
 
-      <form action="/" method="POST">
+      <form action="/payment" method="POST">
         <div class="inputBox autocomplete">
           <h3>Destination</h3>
           <input
@@ -107,7 +107,7 @@
             value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>"
           />
         </div>
-        <a href="/payment" class="btn">book now</a>
+        <input type="submit" class="btn" value="book now" />
       </form>
       <script>
         function updateEndDate() {
